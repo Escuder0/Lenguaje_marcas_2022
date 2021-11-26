@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Listas 3</title>
+    <style>
+        ul.a {
+            list-style-type: square;
+        }
+
+        ul.b {
+            list-style-type: disc;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="a">
+        <li>A
+            <ul class="b">
+                <li>B
+                    <ol>
+                        <li>C</li>
+                        <li>D</li>
+                    </ol>
+                <li>E
+                    <ul class="a">
+                        <li>F</li>
+                        <li>G</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>B</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+    "html": {
+      "-lang":"es",
+      "head": {
+        "meta": {
+          "-charset": "UTF-8"
+        },
+        "title":"Subtablas"
+      },
+      "body":{
+        "tabla":[
+          {
+            "peliculas": {
+              "-colspan": 3
+            },
+            "caratula":"Carátula",
+            "fichatecnica":"Ficha Técnica",
+            "protagonistas":"Protagonistas"
+            
+          }
+          ]
+      }
+    }
+  }

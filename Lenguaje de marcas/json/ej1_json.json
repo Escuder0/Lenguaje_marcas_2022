@@ -1,0 +1,20 @@
+﻿{
+  "Clientes": [
+    {
+      "Cliente": {
+        "-id": 283,
+        "Nombre": "Juan Carlos Crespin",
+        "Direccion": {
+          "-verificada": "si",
+          "Calle": "Avda Perú",
+          "Numero": 2,
+          "Ciudad": "Bahía Blanca",
+          "Provincia": "Buenos Aires",
+          "CodigoPostal": 8000,
+          "Pais": "Argentina"
+        }
+      }
+    }
+  ]
+}
+

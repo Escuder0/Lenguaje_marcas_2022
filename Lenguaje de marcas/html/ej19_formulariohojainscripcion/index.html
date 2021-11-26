@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formulario hoja de inscripcion</title>
+    <meta charset="UTF-8">
+    <style>
+        form {
+            background-color:rgb(223, 223, 223);
+        }
+        ul{
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </td>
+                    <td>
+                        <label for="apellidos">Apellidos</label><br>
+                        <input type="text" name="apellidos" id="apellidos" required>
+                    </td>
+                    <td>
+                        <label for="dni">DNI</label><br>
+                        <input type="text" pattern="[0-9]{8}[A-Z]$" name="dni" id="dni" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="localidad">Localidad de nacimiento</label><br>
+                        <input type="text" name="localidad" id="localidad" required>
+                    </td>
+                    <td>
+                        <label for="provincia">Provincia</label><br>
+                        <select id="provincia" required>
+                            <option value="" selected>Seleccione</option>
+                            <optgroup label="Castilla-LaMancha"></optgroup>
+                            <option value="al">Albacete</option>
+                            <option value="cr">Ciudad Real</option>
+                            <option value="cu">Cuenca</option>
+                            <option value="gu">Guadalajara</option>
+                            <option value="to">Toledo</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="fechanacimiento">Fecha de nacimiento</label><br>
+                        <input type="date" name="fechanacimiento" id="fechanacimiento" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="direccion">Dirección</label><br>
+                        <input type="text" name="direccion" id="direccion" required>
+                    </td>
+                    <td>
+                        <label for="cp">Código Postal</label><br>
+                        <input type="text" pattern="[0-9]{5}$" name="cp" id="cp" required>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Forma de acceso</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="acceso" id="directo">
+                    <label for="directo">Directo</label>
+                    <ul>
+
+                        <li>
+                            <input type="radio" name="bach" id="bach">
+                            <label for="bach">Bachillerrato Log Modalidad</label>
+                            <input type="text" name="bach" id="bacho">
+                        </li>
+                        <li>
+                            <input type="radio" name="bach" id="exp">
+                            <label for="exp">Experimental</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="bach" id="cou1">
+                            <label for="cou1">COU opción</label>
+                            <input type="text" name="cou" id="cou2">
+                        </li>
+                        <li>
+                            <input type="radio" name="bach" id="fp">
+                            <label for="fp">FP2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="bach" id="otro1">
+                            <label for="otro1">Otros (especifique)</label>
+                            <input type="text" name="otros" id="otro2">
+                        </li>
+                    </ul>
+                    <input type="radio" name="acceso" id="prueba">
+                    <label for="prueba">Prueba libre</label>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Documentos adjuntados</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="fotdni" id="fotdni">
+                        <label for="fotdni">Fotocopia dni</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="cert" id="cert">
+                        <label for="cert">Certificado académico</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="otrosdoc" id="otros1">
+                        <label for="otros1">Otros documentos (especifique)</label>
+                        <input type="text" name="otrosdoc" id="otros2">
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

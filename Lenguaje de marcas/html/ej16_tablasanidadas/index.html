@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejemplo tablas anidadas</title>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            white-space: nowrap;
+        }
+
+        table table {
+            width: 100%;
+        }
+
+        td {
+            border: 2px solid rgb(46, 28, 129);
+            padding: 10px;
+            background-color: rgb(231, 231, 231);
+        }
+
+        td.caratula {
+            width: 1%;
+            white-space: nowrap;
+            padding: 0px;
+        }
+
+        caratula {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tablas Anidadas</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <table>
+                    <!--primera fila-->
+                    <tr>
+                        <td colspan="3">PELÍCULAS</td>
+                    </tr>
+                    <!--segunda fila-->
+                    <tr>
+                        <td>CARÁTULA</td>
+                        <td>FICHA TÉCNICA</td>
+                        <td>PROTAGONISTAS</td>
+                    </tr>
+                    <!--tercera fila y primera pelicula-->
+                    <tr>
+                        <!--celda de la caratula-->
+                        <td class="caratula" rowspan="2"><a href="https://es.wikipedia.org/wiki/Mr._Nobody"><img
+                                    src="./img/mrnobody.jpg"
+                                    alt="Cartel de la película Las vidas posibles de Mr. Nobody" width="370" /></a>
+                        </td>
+                        <td>
+                            <!--subtabla para datos de la pelicula-->
+                            <table>
+                                <!--datos-->
+                                <tr>
+                                    <td>Título</td>
+                                    <td>Las vidas posibles de Mr. Nobody</td>
+                                </tr>
+                                <tr>
+                                    <td>Director</td>
+                                    <td>Jaco Van Dormael</td>
+                                </tr>
+                                <tr>
+                                    <td>Producción</td>
+                                    <td>
+                                        <ul>
+                                            <li>Christal Films</li>
+                                            <li>Integral Films</li>
+                                            <li>Lago Film</li>
+                                            <li>Toto & Co Films</li>
+                                            <li>Pan Européenne</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Musica</td>
+                                    <td>Pierre Van Dormael</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <!--creamos la celda para los personajes-->
+                        <td rowspan="2">
+                            <!--tabla para los personajes-->
+                            <table>
+                                <tr>
+                                    <td>Nemo Nobody</td>
+                                    <td rowspan="3"><img src="./img/jaredleto.png" alt="Fotografía de Jared Leto"
+                                            height="125" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://es.wikipedia.org/wiki/Jared_Leto">Jared Leto</a></td>
+                                </tr>
+                                <tr>
+                                    <td>26 de diciembre de 1971</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Nemo Nobody a los 15 años</td>
+                                    <td rowspan="3"><img src="./img/tobyregbo.jpg" alt="Fotografía de Toby Regbo"
+                                            height="125" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://es.wikipedia.org/wiki/Toby_Regbo">Toby Regbo</a></td>
+                                </tr>
+                                <tr>
+                                    <td>18 de octubre de 1991</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Anna</td>
+                                    <td rowspan="3"><img src="./img/dianekruger.jpg" alt="Fotografía de Diane Kruger"
+                                            height="125" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://es.wikipedia.org/wiki/Diane_Kruger">Diane Kruger</a></td>
+                                </tr>
+                                <tr>
+                                    <td>15 de julio de 1976</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Anna a los 15 años</td>
+                                    <td rowspan="3"><img src="./img/junotemple.jpg" alt="Fotografía de Juno Temple"
+                                            height="125" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://es.wikipedia.org/wiki/Juno_Temple">Juno Temple</a></td>
+                                </tr>
+                                <tr>
+                                    <td>21 de julio de 1989</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--cuarta fila de la tabla pricipal-->
+                    <tr>
+                        <td>
+                            <!--Subtabla para más datos de la pelicula-->
+                            <table>
+                                <!--datos-->
+                                <tr>
+                                    <td>país</td>
+                                    <td><img src="./img/belgiumicon.png" alt="Icono de la bandera belga">Bélgica</td>
+                                </tr>
+                                <tr>
+                                    <td>Año</td>
+                                    <td>2009</td>
+                                </tr>
+                                <tr>
+                                    <td>Género</td>
+                                    <td>
+                                        <ul>
+                                            <li>Ciencia Ficción</li>
+                                            <li>Romance</li>
+                                            <li>Drama</li>
+                                            <li>Fantástico</li>
+                                            <li>Película de culto</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Clasificación</td>
+                                    <td>+16</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--Aqui empieza la segunda pelicula-->
+                    <tr>
+                        <!--celda de la caratula-->
+                        <td rowspan="2"><a href="https://es.wikipedia.org/wiki/Free_Guy"><img src="./img/freeguy.jpg"
+                                    alt="Cartel de la película Free guy" width="350" /></a>
+                        </td>
+                        <td>
+                            <!--subtabla para datos de la pelicula-->
+                            <table>
+                                <!--datos-->
+                                <tr>
+                                    <td>Título</td>
+                                    <td>Free guy</td>
+                                </tr>
+                                <tr>
+                                    <td>Director</td>
+                                    <td>Shawn Levy</td>
+                                </tr>
+                                <tr>
+                                    <td>Producción</td>
+                                    <td>
+                                        <ul>
+                                            <li>Berlanti Productions</li>
+                                            <li>20th Century Studios</li>
+                                            <li>21 Laps Entertainment</li>
+                                            <li>Lit Entertainment Group</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Musica</td>
+                                    <td>Christophe Beck</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <!--creamos la celda para los personajes-->
+                        <td rowspan="2">
+                            <!--tabla para los personajes-->
+                            <table>
+                                <tr>
+                                    <td>Guy</td>
+                                    <td rowspan="3"><img src="./img/ryanrynolds.jpg" alt="Fotografía de Ryan Reynolds"
+                                            height="125" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://es.wikipedia.org/wiki/Ryan_Reynolds">Ryan Reynolds</a></td>
+                                </tr>
+                                <tr>
+                                    <td>23 de octubre de 1976</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Millie/Molotov Girl</td>
+                                    <td rowspan="3"><img src="./img/jodiecomer.jpg" alt="Fotografía de Jodie Comer"
+                                            height="125" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://es.wikipedia.org/wiki/Jodie_Comer">Jodie Comer</a></td>
+                                </tr>
+                                <tr>
+                                    <td>11 de marzo de 1993</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Walter "Keys" McKeys</td>
+                                    <td rowspan="3"><img src="./img/joekeery.jpg" alt="Fotografía de Joe Keery"
+                                            height="125" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://es.wikipedia.org/wiki/Joe_Keery">Joe Keery</a></td>
+                                </tr>
+                                <tr>
+                                    <td>24 de abril de 1992</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Antwan</td>
+                                    <td rowspan="3"><img src="./img/taikawaititi.jpg" alt="Fotografía de Taika Waititi"
+                                            height="125" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://es.wikipedia.org/wiki/Taika_Waititi">Taika Waititi</a></td>
+                                </tr>
+                                <tr>
+                                    <td>16 de agosto de 1975</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!--Subtabla para más datos de la segunda pelicula-->
+                            <table>
+                                <!--datos-->
+                                <tr>
+                                    <td>País</td>
+                                    <td><img src="./img/usicon.png" alt="Icono de la bandera EEUU">Estados Unidos</td>
+                                </tr>
+                                <tr>
+                                    <td>Año</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Género</td>
+                                    <td>
+                                        <ul>
+                                            <li>Fantástico</li>
+                                            <li>Comedia</li>
+                                            <li>Acción</li>
+                                            <li>Video Juegos</li>
+                                            <li>Mundo virtual</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Clasificación</td>
+                                    <td>+12</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--Aqui empieza la tercera pelicula-->
+                    <tr>
+                        <!--celda de la caratula-->
+                        <td rowspan="2"><a href="https://es.wikipedia.org/wiki/Inception"><img src="./img/inception.jpg"
+                                    alt="Cartel de la película Origen" width="350" /></a>
+                        </td>
+                        <td>
+                            <!--subtabla para datos de la pelicula-->
+                            <table>
+                                <!--datos-->
+                                <tr>
+                                    <td>Título</td>
+                                    <td>Origen</td>
+                                </tr>
+                                <tr>
+                                    <td>Director</td>
+                                    <td>Christopher Nolan</td>
+                                </tr>
+                                <tr>
+                                    <td>Producción</td>
+                                    <td>
+                                        <ul>
+                                            <li>Warner Bros</li>
+                                            <li>Legendary Pictures</li>
+                                            <li>Syncopy Production</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Musica</td>
+                                    <td>Hans Zimmer</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <!--creamos la celda para los personajes-->
+                        <td rowspan="2">
+                            <!--tabla para los personajes-->
+                            <table>
+                                <tr>
+                                    <td>Dom Cobb</td>
+                                    <td rowspan="3"><img src="./img/leodicaprio.jpg"
+                                            alt="Fotografía de Leonardo DiCaprio" height="125" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://es.wikipedia.org/wiki/Leonardo_DiCaprio">Leonardo DiCaprio </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11 de noviembre de 1974</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Arthur</td>
+                                    <td rowspan="3"><img src="./img/josephgordonlevitt.jfif"
+                                            alt="Fotografía de Joseph Gordon-Levitt" height="125" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://es.wikipedia.org/wiki/Joseph_Gordon-Levitt">Joseph
+                                            Gordon-Levitt</a></td>
+                                </tr>
+                                <tr>
+                                    <td>17 de febrero de 1981</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Ariadne</td>
+                                    <td rowspan="3"><img src="./img/elliotpage.jpg" alt="Fotografía de Ellen Page"
+                                            height="125" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://es.wikipedia.org/wiki/Elliot_Page">Ellen Page</a></td>
+                                </tr>
+                                <tr>
+                                    <td>21 de febrero de 1987</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Eames</td>
+                                    <td rowspan="3"><img src="./img/tomhardy.jpg" alt="Fotografía de Tom Hardy"
+                                            height="125" /> </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://es.wikipedia.org/wiki/Tom_Hardy">Tom Hardy</a></td>
+                                </tr>
+                                <tr>
+                                    <td>15 de septiembre de 1977</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <!--Subtabla para más datos de la tercera-->
+                            <table>
+                                <!--datos-->
+                                <tr>
+                                    <td>País</td>
+                                    <td><img src="./img/usicon.png" alt="Icono de la bandera EEUU">Estados Unidos</td>
+                                </tr>
+                                <tr>
+                                    <td>Año</td>
+                                    <td>2010</td>
+                                </tr>
+                                <tr>
+                                    <td>Género</td>
+                                    <td>
+                                        <ul>
+                                            <li>Ciencia Ficción</li>
+                                            <li>Thriller</li>
+                                            <li>Acción</li>
+                                            <li>Thriller futurista</li>
+                                            <li>Robos y atracos</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Clasificación</td>
+                                    <td>+12</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <h3>Fuentes:</h3>
+        <ul>
+            <li><a href="https://www.filmaffinity.com/es/film716107.html">https://www.filmaffinity.com</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Mr._Nobody">https://es.wikipedia.org</a></li>
+            <li><a href="https://www.imdb.com/title/tt0485947/">www.imdb.com</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

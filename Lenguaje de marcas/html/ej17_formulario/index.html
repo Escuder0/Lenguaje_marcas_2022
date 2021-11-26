@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejemplo formulario</title>
+    <meta charset="UTF-8">
+    form {
+        background-color:rgb(223, 223, 223);
+    }
+</head>
+
+<body>
+    <form action="#">
+        <label for="email">Correo Eléctrónico</label><br>
+        <input type="email" name="email" id="email"><br>
+        <label for="nombre">Nombre</label><br>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label for="apellidos">Apellidos</label><br>
+        <input type="text" name="apellidos" id="apellidos"><br>
+        <label for="password">Contraseña</label><br>
+        <input type="password" name="pass" id="password"><br>
+        <label for="direccion">Dirección</label><br>
+        <input type="text" name="direccion" id="direccion"><br>
+        <label for="poblacion">Población</label><br>
+        <input type="text" name="poblacion" id="poblacion"><br>
+        <label for="provincia">Provincia</label><br>
+        <select id="provincia">
+            <option value="" selected>Seleccione</option>
+            <optgroup label="Castilla-LaMancha"></optgroup>
+            <option value="al">Albacete</option>
+            <option value="cr">Ciudad Real</option>
+            <option value="cu">Cuenca</option>
+            <option value="gu">Guadalajara</option>
+            <option value="to">Toledo</option>
+        </select><br>
+        <label for="fechanacimiento">Fecha de nacimiento</label><br>
+        <input type="date" name="fechanacimiento" id="fechanacimiento"><br>
+        <label for="url">URL de tu negocio</label><br>
+        <input type="url" name="url" id="url"><br>
+        <label for="color">busca tu color favorito</label><br>
+        <input type="color" name="color" id="color"><br>
+        <label for="avatar">Escoge un Avatar (imágenes jpg, jpeg y png)</label><br>
+        <input type="file" accept="image/jpg, image/jpeg, image/png" name="avatar" id="avatar"><br><br>
+        <input type="submit">Enviar</input><br>
+    </form>
+    <hr>
+    <table>
+        <tr>
+            <td colspan="3">
+                <label for="email">Correo Eléctrónico</label>
+                <input type="email" name="email" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre">
+            </td>
+            <td colspan="2">
+                <label for="apellidos">Apellidos</label><br>
+                <input type="text" name="apellidos" id="apellidos">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Contraseña</label><br>
+                <input type="password" name="pass" id="password">
+            </td>
+            <td colspan="2">
+                <label for="direccion">Dirección</label><br>
+                <input type="text" name="direccion" id="direccion">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="poblacion">Población</label><br>
+                <input type="text" name="poblacion" id="poblacion">
+            </td>
+            <td>
+                <label for="provincia">Provincia</label><br>
+                <select id="provincia">
+                    <option value="" selected >Seleccione</option>
+                    <optgroup label="Castilla-LaMancha"></optgroup>
+                    <option value="al">Albacete</option>
+                    <option value="cr">Ciudad Real</option>
+                    <option value="cu">Cuenca</option>
+                    <option value="gu">Guadalajara</option>
+                    <option value="to">Toledo</option>
+                </select>
+            </td>
+            <td>
+                <label for="fechanacimiento">Fecha de nacimiento</label><br>
+                <input type="date" name="fechanacimiento" id="fechanacimiento">
+            </td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

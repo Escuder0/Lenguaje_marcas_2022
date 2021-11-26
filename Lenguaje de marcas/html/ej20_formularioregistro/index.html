@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formulario hoja de inscripcion</title>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid rgb(87, 87, 87);
+            padding: 10px;
+            background-color: rgb(223, 223, 223);
+        }
+
+        table.nada {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre:</label>
+                </td>
+                <td>
+                    <input type="text" pattern="[a-zA-Zá-úÁ-Ú\s]*" name="nombre" id="nombre" required>
+                </td>
+                <td>
+                    <label for="apellidos">Apellidos:</label>
+                </td>
+                <td colspan="2">
+                    <input type="text" pattern="[a-zA-Zá-úÁ-Ú\s]*" name="apellidos" id="apellidos" size="40" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="correo">Correo electrónico:</label>
+                </td>
+                <td>
+                    <input type="email" name="correo" id="correo" required>
+                </td>
+                <td>
+                    <label for="pass">Contraseña:</label>
+                </td>
+                <td colspan="2">
+                    <input type="password" name="pass" id="pass" size="40" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="direccion">Dirección:</label>
+                </td>
+                <td>
+                    <input type="text" name="direccion" id="direccion" required>
+                </td>
+                <td>
+                    <label for="poblacion">Población:</label>
+                </td>
+                <td>
+                    <select id="poblacion" required>
+                        <option value="" selected>Seleccione</option>
+                        <optgroup label="Poblaciones"></optgroup>
+                        <option value="pu">Puertollano</option>
+                        <option value="cr">Ciudad Real</option>
+                        <option value="mi">Miguelturra</option>
+                        <option value="po">Poblete</option>
+                        <option value="ma">Manzanares</option>
+                    </select>
+                </td>
+                <td>
+                    <table class="nada">
+                        <tr>
+                            <td>
+                                <label for="provincia">Provincia:</label>
+                            </td>
+                            <td>
+                                <select id="provincia" required>
+                                    <option value="" selected>Seleccione</option>
+                                    <optgroup label="Castilla-LaMancha"></optgroup>
+                                    <option value="al">Albacete</option>
+                                    <option value="cr">Ciudad Real</option>
+                                    <option value="cu">Cuenca</option>
+                                    <option value="gu">Guadalajara</option>
+                                    <option value="to">Toledo</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fechanacimiento">Fecha de nacimiento:</label>
+                </td>
+                <td>
+                    <input type="date" name="fechanacimiento" id="fechanacimiento" required>
+                </td>
+                <td>
+                    <label for="url">URL de tu negocio:</label>
+                </td>
+                <td colspan="2">
+                    <input type="url" name="url" id="url" size="40" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="color">Color favorito:</label>
+                </td>
+                <td>
+                    <input type="color" name="color" id="color">
+                </td>
+                <td>
+                    <label for="foto">Fotografía de perfil:</label>
+                </td>
+                <td colspan="2">
+                    <input type="file" accept="image/*" name="foto" id="foto">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dni">DNI:</label>
+                </td>
+                <td>
+                    <input type="text" pattern="[0-9]{8}[A-Z]$" name="dni" id="dni" required>
+                </td>
+                <td>
+                    <label for="bio">Biografía:</label>
+                </td>
+                <td colspan="2" rowspan="2">
+                    <textarea rows="3" cols="40" id="bio">Háblanos de tí...</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tlf">Teléfono:</label>
+                </td>
+                <td colspan="2">
+                    <input type="text" pattern="[0-9]{9}" name="tlf" id="tlf" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

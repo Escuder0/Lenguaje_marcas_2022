@@ -1,0 +1,14 @@
+{
+    "persona": {
+      "nombre": "Juan",
+      "edad": 22,
+      "estudios": [
+        {
+          "estudio": "primario"
+        },
+        {
+          "estudio": "secundario"
+         }
+      ]
+    }
+  }
